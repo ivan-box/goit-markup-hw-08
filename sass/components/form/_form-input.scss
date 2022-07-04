@@ -1,0 +1,81 @@
+.user-input {
+  width: 448px;
+  height: 40px;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border var(--fast-transition);
+
+  &:hover,
+  &:focus,
+  &:checked {
+    border: 1px solid var(--accent-color);
+  }
+
+  &::placeholder {
+    opacity: 0;
+  }
+}
+
+.user-input-checkbox.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.user-input-textarea {
+  width: 448px;
+  height: 120px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+
+  transition: border var(--fast-transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+input[placeholder='Enter text'] {
+  padding-left: 42px;
+}
+
+.mailing-input {
+  width: 358px;
+  height: 50px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+}
+
+input[placeholder='E-mail'] {
+  padding: 15px;
+  color: var(--accent-text-color);
+
+  cursor: pointer;
+}

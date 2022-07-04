@@ -1,0 +1,99 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  background-color: var(--footer-bg-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container-logo {
+  margin-right: 70px;
+}
+
+.subscribe,
+.newsletter {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--accent-text-color);
+}
+
+.logo-footer {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: var(--secondary-text-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--accent-text-color);
+}
+
+.footer-contacts li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address,
+.mail,
+.phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+
+  color: var(--accent-text-color);
+
+  transition: color var(--fast-transition);
+}
+
+.mail,
+.phone {
+  color: var(--footer-text-color);
+
+  transition: color var(--fast-transition);
+}
+
+.mail {
+  margin: 9px 0;
+}
+
+.address:hover,
+.mail:hover,
+.phone:hover,
+.address:focus,
+.mail:focus,
+.phone:focus {
+  color: var(--accent-color);
+}
+
+.mailing {
+  margin-left: 93px;
+}
+
+.footer-subscribe-icon {
+  position: absolute;
+  top: 25%;
+  right: 28px;
+  display: flex;
+  justify-content: center;
+
+  fill: var(--accent-text-color);
+}
+
+.subscribe-text {
+  margin-right: 10px;
+}
+
+

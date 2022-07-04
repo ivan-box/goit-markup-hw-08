@@ -1,0 +1,28 @@
+.user-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-bottom: 10px;
+}
+
+.user-name-label,
+.user-phone-label,
+.user-mail-label {
+  position: relative;
+}
+
+.user-comment-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-checkbox-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

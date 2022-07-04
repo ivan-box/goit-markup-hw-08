@@ -1,0 +1,28 @@
+.main-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+
+  transition: color var(--fast-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  align-self: center;
+}
+
+.main-nav__list li:not(:last-child) {
+  margin-right: 50px;
+}

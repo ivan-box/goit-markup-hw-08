@@ -1,0 +1,79 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 222px 536px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity var(--fast-transition), visibility var(--fast-transition);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  display: inline-block;
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: var(--accent-text-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  transition: transform var(--fast-transition);
+}
+
+.user-name,
+.user-phone,
+.user-mail,
+.user-comment {
+  margin-bottom: 4px;
+
+  user-select: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+.user-checkbox {
+  margin-left: 7px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+
+  user-select: none;
+
+  color: var(--secondary-text-color);
+}
+
+.user-terms {
+  color: var(--accent-color);
+}
+
+textarea[placeholder='Enter text'] {
+  padding-top: 12px;
+  padding-left: 16px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}

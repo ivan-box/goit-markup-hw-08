@@ -1,0 +1,24 @@
+@import '../sass/utils/vars';
+
+@import '../sass/vendors/vendors';
+
+@import '../sass/base/base';
+@import '../sass/base/reset';
+@import '../sass/base/container';
+
+@import '../sass/components/section';
+@import '../sass/components/main-title';
+@import '../sass/components/section-title';
+@import '../sass/components/button';
+@import '../sass/components/socials';
+@import '../sass/components/navigation';
+@import '../sass/components/form/module';
+
+@import '../sass/layouts/header';
+@import '../sass/layouts/hero';
+@import '../sass/layouts/advantages';
+@import '../sass/layouts/crafts';
+@import '../sass/layouts/team';
+@import '../sass/layouts/customers';
+@import '../sass/layouts/footer';
+@import '../sass/layouts/portfolio';

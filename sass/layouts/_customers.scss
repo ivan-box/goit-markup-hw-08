@@ -1,0 +1,37 @@
+.customers-list {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.customers-list__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+  border-radius: 3px;
+  border: 1px solid var(--secondary-border-color);
+
+  cursor: pointer;
+
+  transition: border var(--fast-transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.customers-list__icon {
+  fill: var(--secondary-border-color);
+
+  transition: fill var(--fast-transition);
+
+  .customers-list__card:hover &,
+  .customers-list__card:focus & {
+    fill: var(--accent-color);
+  }
+}
