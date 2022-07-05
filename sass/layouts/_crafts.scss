@@ -1,5 +1,10 @@
-.trade {
-  padding-top: 0;
+.craft {
+  display: none;
+  // padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .craft-list__work {

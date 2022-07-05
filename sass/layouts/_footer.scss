@@ -7,16 +7,41 @@
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer-container-logo {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    // margin-right: 70px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.follow {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .subscribe,
 .newsletter {
-  margin-top: 10px;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -41,7 +66,10 @@
 }
 
 .footer-contacts li:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address,
@@ -65,10 +93,6 @@
   transition: color var(--fast-transition);
 }
 
-.mail {
-  margin: 9px 0;
-}
-
 .address:hover,
 .mail:hover,
 .phone:hover,
@@ -79,7 +103,29 @@
 }
 
 .mailing {
-  margin-left: 93px;
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.mailing-box {
+  // width: 450px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // flex-shrink: 1;
+}
+
+.mailing-box label {
+  margin-bottom: 20px;
+}
+
+.mailing-box button {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-subscribe-icon {
@@ -95,5 +141,3 @@
 .subscribe-text {
   margin-right: 10px;
 }
-
-

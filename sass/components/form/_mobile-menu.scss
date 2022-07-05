@@ -1,0 +1,138 @@
+.burger-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 480px;
+    max-height: 796px;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 48px;
+  }
+}
+
+.burger-btn {
+  // width: 40px;
+  // height: 40px;
+  // display: inline-block;
+  // align-items: center;
+  // justify-content: center;
+  // margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  fill: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-btn.is-open .burger-icon-open {
+  opacity: 0;
+}
+
+.burger-btn.is-open .burger-icon-close {
+  opacity: 1;
+}
+
+.burger-icon-open {
+  opacity: 1;
+  fill: #212121;
+}
+
+.burger-icon-close {
+  opacity: 0;
+  fill: #212121;
+}
+
+.mobile-nav {
+  margin-bottom: 302px;
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    text-decoration: none;
+  }
+
+  & li {
+    margin-bottom: 32px;
+  }
+  & li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.burger-contacts {
+  //   display: block;
+  & li {
+    margin-bottom: 32px;
+  }
+
+  & li:last-child {
+    margin-bottom: 0;
+  }
+  &__links {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+
+  &__links-mail {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+}
+
+.social-group {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 48px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+  list-style-type: none;
+
+  &__net {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__net:last-child {
+    margin-right: 0;
+    border-right: none;
+  }
+}

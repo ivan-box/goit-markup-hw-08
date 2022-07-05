@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>goIt-markup-hw-02</title>
+  <title>goIt-markup-hw-08</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,13 +18,14 @@
 <body>
 
   <!-- header \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
   <header class="item-header">
     <div class="container wrapper-flex">
-      <a class="logo-header list" href="./index.html"><span class="accent-color">Web</span>Studio</a>
+      <a class="logo-header list" href="./index.html">
+        <span class="accent-color">Web</span>Studio</a>
       <nav class="wrapper-flex main-nav">
         <ul class="main-nav__list list">
           <li>
-            <!-- main-nav__link -->
             <a class="main-nav__link current" href="./index.html">Studio</a>
           </li>
           <li>
@@ -35,16 +36,15 @@
           </li>
         </ul>
       </nav>
-      <!--contacts  contacts-list  -->
       <ul class="contacts-list list">
-        <li>
+        <li class="contact-unit">
           <a class="contacts-links" href="mailto:info@devstudio.com">
             <svg class="contact-icon" width="16px" height="12px">
               <use href="./image/icons.svg#envelope">
               </use>
             </svg>info@devstudio.com</a>
         </li>
-        <li>
+        <li class="contact-unit">
           <a class="contacts-links" href="tel:+38-096-111-11-11">
             <svg class="contact-icon" width="10px" height="16px">
               <use href="./image/icons.svg#smartphone">
@@ -53,7 +53,51 @@
         </li>
       </ul>
     </div>
+
+    <button class="burger-btn" type="button" data-menu-button aria-expanded="false">
+      <svg class="burger-icon" width="40px" height="40px">
+        <use class="burger-icon-open" href="./image/icons.svg#burger-open">
+        </use>
+        <use class="burger-icon-close" href="./image/icons.svg#burger-close">
+        </use>
+      </svg></button>
+
+    <div class="burger-menu" data-menu>
+      <div class="burger-menu__container">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li>
+              <a class="mobile-nav__link current" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="burger-contacts list">
+          <li>
+            <a class="burger-contacts__links" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a class="burger-contacts__links-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="social-group">
+          <li class="social-group__net"><a href="" aria-label="Instagram"></a>Instagram</li>
+          <li class="social-group__net"><a href="" aria-label="Twitter"></a>Twitter</li>
+          <li class="social-group__net"><a href="" aria-label="Facebook"></a>Facebook</li>
+          <li class="social-group__net"><a href="" aria-label="LinkedIn"></a>LinkedIn</li>
+        </ul>
+
+      </div>
+
+    </div>
+
   </header>
+
   <main>
 
     <!-- hero \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
@@ -66,8 +110,6 @@
         </h1>
         <button class="hero-button" type="button" data-modal-open>
           Order service</button>
-
-        <!-- modal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -88,7 +130,6 @@
                 </svg>
               </label>
 
-
               <label class="user-phone-label user-label">
                 <span class="user-phone">Telephone</span>
                 <input class="user-input" type="tel" name="user-phone" placeholder="Enter text">
@@ -98,7 +139,6 @@
                 </svg>
               </label>
 
-
               <label class="user-mail-label user-label">
                 <span class="user-mail">E-mail</span>
                 <input class="user-input" type="email" name="user-mail" placeholder="Enter text">
@@ -107,7 +147,6 @@
                   </use>
                 </svg>
               </label>
-
 
               <label class="user-comment-label">
                 <span class="user-comment">Comment</span>
@@ -142,7 +181,7 @@
     <section class="section advantages">
       <div class="container">
         <h2 class="title-advantages visually-hidden">Our advantages</h2>
-        <ul class="list wrapper-flex">
+        <ul class="list advantages__wrapper-flex">
           <li class="advantage">
             <div class="wrapper-icon">
               <svg class="advantage-icon" width="70px" height="70px">
@@ -200,7 +239,7 @@
 
     <!-- what we do \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
-    <section class="section">
+    <!-- <section class="section craft">
       <div class="container">
         <h2 class="section-title">What are we doing</h2>
 
@@ -220,11 +259,11 @@
         </ul>
 
       </div>
-    </section>
+    </section> -->
 
     <!-- our team \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
-    <section class="section team">
+    <!-- <section class="section team">
       <div class="container">
         <h2 class="section-title">Our team</h2>
         <ul class="team__list list wrapper-flex">
@@ -266,7 +305,7 @@
           <li class="team__list-card">
             <img src="./image/team/img(1).jpg" alt="photo" width="270" />
             <div class="team__list-member">
-              <h3 class="team__list-title">Olga Repina</h3>
+              <h3 class="team__list-title">Olga Repine</h3>
               <p class="team__list-position">Frontend Developer</p>
               <ul class="social-network-icons list">
                 <li>
@@ -301,7 +340,7 @@
           <li class="team__list-card">
             <img src="./image/team/img(2).jpg" alt="photo" width="270" />
             <div class="team__list-member">
-              <h3 class="team__list-title">Mykola Tarasov</h3>
+              <h3 class="team__list-title">Mycol Parasol</h3>
               <p class="team__list-position">Marketing</p>
               <ul class="social-network-icons list">
                 <li>
@@ -336,7 +375,7 @@
           <li class="team__list-card">
             <img src="./image/team/img(3).jpg" alt="photo" width="270" />
             <div class="team__list-member">
-              <h3 class="team__list-title">Mikhail Ermakov</h3>
+              <h3 class="team__list-title">Mikhail Remakes</h3>
               <p class="team__list-position">UI Designer</p>
               <ul class="social-network-icons list">
                 <li>
@@ -371,15 +410,15 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Regular Customers -->
 
     <section class="section customers">
       <div class="container">
         <h2 class="section-title">Regular Customers</h2>
-        <ul class="customers-list list">
-          <li>
+        <ul class="customers-list wrapper-flex list">
+          <li class="customers-list__customer">
             <a class="customers-list__card" href="">
               <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company1">
@@ -387,7 +426,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="customers-list__customer">
             <a class="customers-list__card" href="">
               <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company2">
@@ -395,7 +434,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="customers-list__customer">
             <a class="customers-list__card" href="">
               <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company3">
@@ -403,7 +442,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="customers-list__customer">
             <a class="customers-list__card" href="">
               <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company4">
@@ -411,7 +450,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="customers-list__customer">
             <a class="customers-list__card" href="">
               <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company5">
@@ -419,7 +458,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="customers-list__customer">
             <a class="customers-list__card" href="">
               <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company6">
@@ -430,6 +469,7 @@
         </ul>
       </div>
     </section>
+
   </main>
 
   <!-- footer -->
@@ -443,7 +483,7 @@
             <li>
               <a class="address"
                 href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                target="_blank" rel="noopener noreferrer">Kyiv, Lesia Ukrainka Ave, 26</a>
+                target="_blank" rel="noopener noreferrer">Kyiv, Lesa Ukrainian Ave, 26</a>
             </li>
             <li>
               <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -454,56 +494,58 @@
           </ul>
         </address>
       </div>
-      <div>
+      <div class="follow">
         <h3 class="subscribe">Follow</h3>
-        <div class="social-network-icons">
-          <ul class="social-network-icons list">
-            <li>
-              <a class="social-footer-icons" href="">
-                <svg class="social-footer-icon" width="20px" height="20px">
-                  <use href="./image/icons.svg#instagram">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-footer-icons" href="">
-                <svg class="social-footer-icon" width="20px" height="20px">
-                  <use href="./image/icons.svg#twitter">
-                  </use>
-                </svg></a>
-            </li>
-            <li>
-              <a class="social-footer-icons" href="">
-                <svg class="social-footer-icon" width="20px" height="20px">
-                  <use href="./image/icons.svg#facebook">
-                  </use>
-                </svg></a>
-            </li>
-            <li>
-              <a class="social-footer-icons" href="">
-                <svg class="social-footer-icon" width="20px" height="20px">
-                  <use href="./image/icons.svg#linkedin">
-                  </use>
-                </svg></a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social-network-icons list">
+          <li>
+            <a class="social-footer-icons" href="">
+              <svg class="social-footer-icon" width="20px" height="20px">
+                <use href="./image/icons.svg#instagram">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-footer-icons" href="">
+              <svg class="social-footer-icon" width="20px" height="20px">
+                <use href="./image/icons.svg#twitter">
+                </use>
+              </svg></a>
+          </li>
+          <li>
+            <a class="social-footer-icons" href="">
+              <svg class="social-footer-icon" width="20px" height="20px">
+                <use href="./image/icons.svg#facebook">
+                </use>
+              </svg></a>
+          </li>
+          <li>
+            <a class="social-footer-icons" href="">
+              <svg class="social-footer-icon" width="20px" height="20px">
+                <use href="./image/icons.svg#linkedin">
+                </use>
+              </svg></a>
+          </li>
+        </ul>
       </div>
       <div class="mailing">
         <h3 class="newsletter">Subscribe to newsletter</h3>
-        <div>
+        <form class="mailing-box">
           <label>
             <input class="mailing-input" type="email" placeholder="E-mail"></label>
           <button class="btn-subscribe">
-            <span class="subscribe-text">Subscribe</span><svg class="footer-subscribe-icon" width="24px" height="24px">
+            <span class="subscribe-text">Subscribe</span>
+            <svg class="footer-subscribe-icon" width="24px" height="24px">
               <use href="./image/icons.svg#send">
               </use>
             </svg></button>
-        </div>
+        </form>
       </div>
     </div>
   </footer>
+
+
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

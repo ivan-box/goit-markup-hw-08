@@ -776,7 +776,7 @@ textarea[placeholder='Enter text'] {
 
 .subscribe,
 .newsletter {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 20px;
 
   font-weight: 700;

@@ -1,3 +1,14 @@
+.main-nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
 .main-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
