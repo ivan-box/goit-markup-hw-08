@@ -25,10 +25,10 @@
       <nav class="wrapper-flex main-nav">
         <ul class="main-nav__list list">
           <li>
-            <a class="main-nav__link current" href="./index.html">Studio</a>
+            <a class="main-nav__link" href="./index.html">Studio</a>
           </li>
           <li>
-            <a class="main-nav__link" href="./portfolio.html">Portfolio</a>
+            <a class="main-nav__link current" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
             <a class="main-nav__link" href="">Contacts</a>
@@ -51,6 +51,48 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
+
+    <button class="burger-btn" type="button" data-menu-button aria-expanded="false">
+      <svg class="burger-icon" width="40px" height="40px">
+        <use class="burger-icon-open" href="./image/icons.svg#burger-open">
+        </use>
+        <use class="burger-icon-close" href="./image/icons.svg#burger-close">
+        </use>
+      </svg></button>
+
+    <div class="burger-menu" data-menu>
+      <div class="burger-menu__container">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li>
+              <a class="mobile-nav__link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link current" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="burger-contacts list">
+          <li>
+            <a class="burger-contacts__links" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a class="burger-contacts__links-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="social-group">
+          <li class="social-group__net"><a href="" aria-label="Instagram"></a>Instagram</li>
+          <li class="social-group__net"><a href="" aria-label="Twitter"></a>Twitter</li>
+          <li class="social-group__net"><a href="" aria-label="Facebook"></a>Facebook</li>
+          <li class="social-group__net"><a href="" aria-label="LinkedIn"></a>LinkedIn</li>
+        </ul>
+
+      </div>
+
     </div>
 
   </header>
@@ -229,57 +271,59 @@
 
   <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-container-logo">
-        <a class="logo-footer list" href="./index.html"><span class="accent-color">Web</span>Studio</a>
-        <address>
-          <ul class="footer-contacts list">
+      <div class="footer-tablet">
+        <div class="footer-container-logo">
+          <a class="logo-footer list" href="./index.html"><span class="accent-color">Web</span>Studio</a>
+          <address>
+            <ul class="footer-contacts list">
+              <li>
+                <a class="address"
+                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank" rel="noopener noreferrer">Kyiv, Lesa Ukrainian Ave, 26</a>
+              </li>
+              <li>
+                <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="phone" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="follow">
+          <h3 class="subscribe">Follow</h3>
+          <ul class="social-network-icons list">
             <li>
-              <a class="address"
-                href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                target="_blank" rel="noopener noreferrer">Kyiv, Lesa Ukrainian Ave, 26</a>
+              <a class="social-footer-icons" href="">
+                <svg class="social-footer-icon" width="20px" height="20px">
+                  <use href="./image/icons.svg#instagram">
+                  </use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="social-footer-icons" href="">
+                <svg class="social-footer-icon" width="20px" height="20px">
+                  <use href="./image/icons.svg#twitter">
+                  </use>
+                </svg></a>
             </li>
             <li>
-              <a class="phone" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+              <a class="social-footer-icons" href="">
+                <svg class="social-footer-icon" width="20px" height="20px">
+                  <use href="./image/icons.svg#facebook">
+                  </use>
+                </svg></a>
+            </li>
+            <li>
+              <a class="social-footer-icons" href="">
+                <svg class="social-footer-icon" width="20px" height="20px">
+                  <use href="./image/icons.svg#linkedin">
+                  </use>
+                </svg></a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="follow">
-        <h3 class="subscribe">Follow</h3>
-        <ul class="social-network-icons list">
-          <li>
-            <a class="social-footer-icons" href="">
-              <svg class="social-footer-icon" width="20px" height="20px">
-                <use href="./image/icons.svg#instagram">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-footer-icons" href="">
-              <svg class="social-footer-icon" width="20px" height="20px">
-                <use href="./image/icons.svg#twitter">
-                </use>
-              </svg></a>
-          </li>
-          <li>
-            <a class="social-footer-icons" href="">
-              <svg class="social-footer-icon" width="20px" height="20px">
-                <use href="./image/icons.svg#facebook">
-                </use>
-              </svg></a>
-          </li>
-          <li>
-            <a class="social-footer-icons" href="">
-              <svg class="social-footer-icon" width="20px" height="20px">
-                <use href="./image/icons.svg#linkedin">
-                </use>
-              </svg></a>
-          </li>
-        </ul>
+        </div>
       </div>
       <div class="mailing">
         <h3 class="newsletter">Subscribe to newsletter</h3>

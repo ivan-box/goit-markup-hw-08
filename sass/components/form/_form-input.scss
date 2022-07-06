@@ -1,5 +1,5 @@
 .user-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
 
   cursor: pointer;
@@ -19,6 +19,13 @@
   &::placeholder {
     opacity: 0;
   }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .user-input-checkbox.visually-hidden {
@@ -37,7 +44,7 @@
 }
 
 .user-input-textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   margin-bottom: 10px;
 
@@ -56,6 +63,13 @@
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 input[placeholder='Enter text'] {
@@ -72,9 +86,15 @@ input[placeholder='Enter text'] {
   border-radius: 4px;
   outline: none;
 
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    // height: 50px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 358px;
-    height: 50px;
+    margin-right: 12px;
+    // height: 50px;
   }
 }
 

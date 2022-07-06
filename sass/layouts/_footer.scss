@@ -8,16 +8,18 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
+
   @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -26,7 +28,6 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    // margin-right: 70px;
     margin-bottom: 0;
   }
 
@@ -35,9 +36,28 @@
   }
 }
 
+.footer-tablet {
+  width: 100%;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
 .follow {
   text-align: center;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe,
@@ -67,6 +87,7 @@
 
 .footer-contacts li:not(:last-child) {
   margin-bottom: 8px;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
@@ -108,6 +129,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    text-align: left;
   }
 }
 
@@ -117,10 +139,19 @@
   flex-direction: column;
   // align-items: center;
   // flex-shrink: 1;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    // flex-shrink: 1;
+  }
 }
 
 .mailing-box label {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .mailing-box button {
