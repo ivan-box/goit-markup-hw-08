@@ -3,6 +3,7 @@
   padding-top: 60px;
 
   background-color: var(--footer-bg-color);
+  max-height: 100%;
 }
 
 .footer-container {
@@ -32,6 +33,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    text-align: left;
     margin-right: 70px;
   }
 }
