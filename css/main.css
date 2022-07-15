@@ -404,7 +404,7 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
+  width: 320px;
   min-height: 609px;
   padding: 40px;
   background-color: var(--accent-text-color);
@@ -415,6 +415,18 @@ ul {
   transition: -webkit-transform var(--fast-transition);
   transition: transform var(--fast-transition);
   transition: transform var(--fast-transition), -webkit-transform var(--fast-transition);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -517,7 +529,7 @@ textarea[placeholder="Enter text"] {
 }
 
 .user-input {
-  width: 370px;
+  width: 240px;
   height: 40px;
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -525,6 +537,17 @@ textarea[placeholder="Enter text"] {
   outline: none;
   -webkit-transition: border var(--fast-transition);
   transition: border var(--fast-transition);
+}
+@media screen and (min-width: 480px) {
+  .user-input {
+    width: 370px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user-input {
+    width: 448px;
+  }
 }
 .user-input:hover, .user-input:focus, .user-input:checked {
   border: 1px solid var(--accent-color);
@@ -544,11 +567,6 @@ textarea[placeholder="Enter text"] {
 .user-input::placeholder {
   opacity: 0;
 }
-@media screen and (min-width: 1200px) {
-  .user-input {
-    width: 448px;
-  }
-}
 
 .user-input-checkbox.visually-hidden {
   position: absolute;
@@ -565,7 +583,7 @@ textarea[placeholder="Enter text"] {
 }
 
 .user-input-textarea {
-  width: 370px;
+  width: 240px;
   height: 120px;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -592,6 +610,12 @@ textarea[placeholder="Enter text"] {
 }
 .user-input-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 480px) {
+  .user-input-textarea {
+    width: 370px;
+    height: 120px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .user-input-textarea {
@@ -1031,6 +1055,7 @@ input[placeholder=E-mail] {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-bottom: 30px;
 }
 .advantage:nth-child(4n) {
   margin-bottom: 0;

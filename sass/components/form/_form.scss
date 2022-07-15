@@ -30,7 +30,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 320px;
   min-height: 609px;
 
   padding: 40px;
@@ -41,7 +41,13 @@
   border-radius: 6px;
   transition: transform var(--fast-transition);
 
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
   @media screen and (min-width: 768px) {
+    width: 450px;
+    min-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {

@@ -1,7 +1,7 @@
 .user-input {
-  width: 370px;
+  width: 240px;
   height: 40px;
-
+  // justify-content: center;
   cursor: pointer;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -10,6 +10,16 @@
 
   transition: border var(--fast-transition);
 
+  @media screen and (min-width: 480px) {
+    width: 370px;
+    height: 40px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
   &:hover,
   &:focus,
   &:checked {
@@ -18,13 +28,6 @@
 
   &::placeholder {
     opacity: 0;
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 448px;
   }
 }
 
@@ -44,7 +47,7 @@
 }
 
 .user-input-textarea {
-  width: 370px;
+  width: 240px;
   height: 120px;
   margin-bottom: 10px;
 
@@ -64,7 +67,9 @@
     color: rgba(117, 117, 117, 0.5);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
+    width: 370px;
+    height: 120px;
   }
 
   @media screen and (min-width: 1200px) {
